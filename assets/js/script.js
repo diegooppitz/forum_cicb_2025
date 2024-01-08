@@ -3,8 +3,9 @@ window.onload = function () {
   var urlParams = new URLSearchParams(queryString);
   var switcher = Boolean(urlParams.get('switcher-off'));
   if (switcher) {
-    $('.language-switcher').hide()
-    $('body').removeClass('scroll')
+    $('.language-switcher').hide();
+    $('body').removeClass('scroll');
+    AOS.init();
   }
   let docHeight = $(document).height();
   $('.svg_wrapper').height(docHeight)
@@ -58,6 +59,7 @@ function updateBoxPosition(box, path) {
 
   // Set the box position and rotation
   box.setAttribute('transform', `translate(${point.x - 15},${point.y - 15})`);
+  AOS.refresh()
 }
 
 
@@ -67,6 +69,7 @@ $('.close-lang').click(function () {
   setTimeout(() => {
     $('body').removeClass('scroll')
   }, 500);
+  AOS.init();
 })
 
 // var waypoints = [
