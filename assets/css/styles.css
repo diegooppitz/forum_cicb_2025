@@ -215,9 +215,6 @@ h2 span {
   line-height: 25px;
 }
 
-.section-2 {
-  padding: 100px 25px;
-}
 .section-2 h2 {
   margin: auto;
   width: fit-content;
@@ -341,7 +338,7 @@ h2 span {
   max-width: 22.625rem;
   position: relative;
   margin: 0 auto;
-  height: 97.375rem;
+  height: 92.375rem;
 }
 
 @media (min-width: 1020px) {
@@ -743,9 +740,35 @@ footer .border {
   border-right: 1px solid white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1440px) {
+  .linha-1 {
+    left: 150px;
+  }
+  .linha-2 {
+    right: 250px;
+  }
+  .linha-3 {
+    right: 170px;
+  }
+}
+@media (max-width: 1024px) {
   .svg_wrapper {
     display: none;
+  }
+  .linha-1 {
+    left: -200px;
+  }
+  .linha-2 {
+    right: -200px;
+  }
+  .linha-3 {
+    right: -100px;
+  }
+  section {
+    padding: 30px 15px;
+  }
+  section:not(.section-5) {
+    min-height: unset;
   }
 }
 

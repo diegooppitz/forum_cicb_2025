@@ -229,7 +229,6 @@ h2 span {
 }
 
 .section-2 {
-    padding: 100px 25px;
 
     h2 {
         margin: auto;
@@ -372,7 +371,7 @@ h2 span {
     max-width: 22.625rem;
     position: relative;
     margin: 0 auto;
-    height: 97.375rem;
+    height: 92.375rem;
 }
 
 @media (min-width: 1020px) {
@@ -801,8 +800,35 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width:1440px) {
+    .linha-1 {
+        left: 150px;
+    }
+    .linha-2 {
+        right: 250px;
+    }
+    .linha-3 {
+        right: 170px;
+    }
+}
+
+@media (max-width: 1024px) {
     .svg_wrapper {
         display: none;
+    }
+    .linha-1 {
+        left: -200px;
+    }
+    .linha-2 {
+        right: -200px;
+    }
+    .linha-3 {
+        right: -100px;
+    }
+    section {
+        padding: 30px 15px;
+        &:not(.section-5) {
+            min-height: unset;
+        }
     }
 }
