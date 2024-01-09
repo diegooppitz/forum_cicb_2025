@@ -94,35 +94,6 @@ $('.close-lang').click(function () {
   AOS.init();
 })
 
-// var waypoints = [
-//   $('.primary-section').waypoint({
-//     handler: function(direction) {
-//       console.log('primary-section')
-//       scrollingBox1.css('fill', '#453966')
-//       scrollingBox2.css('fill', '#453966')
-//       scrollingBox3.css('fill', '#453966')
-//     }
-//   }),
-//   $('.section-dois').waypoint({
-//     handler: function(direction) {
-//       console.log('primary-section')
-//       scrollingBox1.css('fill', '#453966')
-//       scrollingBox2.css('fill', '#453966')
-//       scrollingBox3.css('fill', '#453966')
-//     },
-//     offset: '361px'
-//   }),
-//   $('.secondary-section').waypoint({
-//     handler: function(direction) {
-//       scrollingBox1.css('fill', '#B398FF')
-//       scrollingBox2.css('fill', '#B398FF')
-//       scrollingBox3.css('fill', '#B398FF')
-//     },
-//     offset: '245px'
-//   })
-// ]
-
-
 var interval,
   body = $('body'),
   details = body.find('.s-4-details'),
