@@ -72,15 +72,15 @@ section .container {
   }
   @-moz-document url-prefix() {
     .linha-1 {
-      left: 530px;
+      left: 24%;
       top: 0px;
     }
     .linha-2 {
-      right: 640px;
+      right: 26%;
       top: 0px;
     }
     .linha-3 {
-      right: 550px;
+      right: 23.5%;
       top: 0px;
     }
   }
