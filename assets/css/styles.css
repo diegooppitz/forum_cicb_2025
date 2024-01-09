@@ -45,20 +45,31 @@ section .container {
 }
 
 .linha-1 {
-  left: 390px;
-  top: 0px;
+  left: 18vw;
 }
 
 .linha-2 {
-  right: 520px;
-  top: 0px;
+  right: 250px;
 }
 
 .linha-3 {
-  right: 450px;
-  top: 0px;
+  right: 170px;
 }
 
+@media (min-width: 1830px) {
+  .linha-1 {
+    left: 530px;
+    top: 0px;
+  }
+  .linha-2 {
+    right: 620px;
+    top: 0px;
+  }
+  .linha-3 {
+    right: 570px;
+    top: 0px;
+  }
+}
 .language-switcher {
   background-color: #453966;
   position: absolute;
@@ -220,6 +231,12 @@ h2 span {
   line-height: 25px;
 }
 
+.section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .section-2 h2 {
   margin: auto;
   width: fit-content;
@@ -457,7 +474,6 @@ h2 span {
   position: absolute;
   top: 13.563rem;
   width: 15.625rem;
-  left: 4.188rem;
   text-align: left;
 }
 
@@ -784,9 +800,11 @@ footer .border {
   }
   .linha-1 {
     left: -200px;
+    top: 170px;
   }
   .linha-2 {
-    right: -200px;
+    right: -100px;
+    top: 80px;
   }
   .linha-3 {
     right: -100px;
