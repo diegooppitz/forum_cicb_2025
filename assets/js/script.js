@@ -33,26 +33,48 @@ window.onload = function () {
 };
 
 function updateBoxPosition(box, path) {
+  const darker = '#453966';
+  const lighter = '#B398FF';
   const scrollPosition = window.scrollY;
   const windowHeight = window.innerHeight;
   const documentHeight = document.body.scrollHeight;
-  
+
   // Calculate the percentage based on the current scroll position
   const percentage = scrollPosition / (documentHeight - windowHeight);
   //  const percentage = scrollPosition / documentHeight;
-  if (percentage < 0.1866){scrollingBox3.style.fill = '#453966';}
-  if (percentage > 0.1866){scrollingBox3.style.fill = '#B398FF';}
-  if(percentage < 0.2051){scrollingBox1.style.fill = '#453966';}
-  if(percentage > 0.2051){scrollingBox1.style.fill = '#B398FF';}
-  if(percentage < 0.2456){scrollingBox2.style.fill = '#453966';}
-  if(percentage > 0.2456){scrollingBox2.style.fill = '#B398FF';}
-  if(percentage > 0.5163){scrollingBox3.style.fill = '#453966';}
-  if(percentage > 0.5656){scrollingBox2.style.fill = '#453966';}
-  if(percentage > 0.5755){scrollingBox1.style.fill = '#453966';}
-  if(percentage > 0.7015){scrollingBox3.style.fill = '#B398FF';}
-  if(percentage > 0.7424){scrollingBox2.style.fill = '#B398FF';}
-  if(percentage > 0.7523){scrollingBox1.style.fill = '#B398FF';}
   
+  // mobile positioning:
+  if (window.innerWidth < 1000) {
+    if (percentage < 0.1078) {scrollingBox1.style.fill = darker;}
+    if (percentage > 0.1078) {scrollingBox1.style.fill = lighter;}
+    if (percentage < 0.1251) {scrollingBox3.style.fill = darker;}
+    if (percentage > 0.1251) {scrollingBox3.style.fill = lighter;}
+    if (percentage < 0.1515) {scrollingBox2.style.fill = darker;}
+    if (percentage > 0.1515) {scrollingBox2.style.fill = lighter;}
+    if (percentage > 0.3647) {scrollingBox3.style.fill = darker;}
+    if (percentage > 0.4216) {scrollingBox1.style.fill = darker;}
+    if (percentage > 0.4369) {scrollingBox2.style.fill = darker;}
+    if (percentage > 0.7951) {scrollingBox1.style.fill = lighter;}
+    if (percentage > 0.8114) {scrollingBox2.style.fill = lighter;}
+    if (percentage > 0.8382) {scrollingBox3.style.fill = lighter;}
+    
+  }
+  //desktop positioning:
+  if (window.innerWidth > 1000) {
+    if (percentage < 0.1866) { scrollingBox3.style.fill = darker; }
+    if (percentage > 0.1866) { scrollingBox3.style.fill = lighter; }
+    if (percentage < 0.2051) { scrollingBox1.style.fill = darker; }
+    if (percentage > 0.2051) { scrollingBox1.style.fill = lighter; }
+    if (percentage < 0.2456) { scrollingBox2.style.fill = darker; }
+    if (percentage > 0.2456) { scrollingBox2.style.fill = lighter; }
+    if (percentage > 0.5163) { scrollingBox3.style.fill = darker; }
+    if (percentage > 0.5656) { scrollingBox2.style.fill = darker; }
+    if (percentage > 0.5755) { scrollingBox1.style.fill = darker; }
+    if (percentage > 0.7015) { scrollingBox3.style.fill = lighter; }
+    if (percentage > 0.7424) { scrollingBox2.style.fill = lighter; }
+    if (percentage > 0.7523) { scrollingBox1.style.fill = lighter; }
+  }
+
   // Calculate the position along the path based on the percentage
   const pathLength = path.getTotalLength();
   const point = path.getPointAtLength(percentage * pathLength);
