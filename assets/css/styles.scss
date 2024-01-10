@@ -82,12 +82,12 @@ section .container {
             left: 24%;
             top: 0px;
         }
-    
+
         .linha-2 {
             right: 26%;
             top: 0px;
         }
-    
+
         .linha-3 {
             right: 23.5%;
             top: 0px;
@@ -275,6 +275,7 @@ h2 span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     h2 {
         margin: auto;
         width: fit-content;
@@ -941,6 +942,12 @@ footer {
         h4 {
             margin-bottom: 0;
         }
+    }
+}
+
+@media (max-width:700px) {
+    .language-switcher {
+        flex-direction: column;
     }
 }
 
