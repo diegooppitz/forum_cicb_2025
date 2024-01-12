@@ -100,7 +100,7 @@ section .container {
 }
 .language-switcher p {
   color: #F2F2F2;
-  font-family: IvyMode;
+  font-family: IvyMode, serif;
   font-size: 25px;
   font-style: italic;
   font-weight: 400;
@@ -116,6 +116,7 @@ section .container {
 .languages .close-lang {
   color: #B398FF;
   text-align: center;
+  font-family: IvyEpic, sans-serif;
   font-size: 82.601px;
   font-style: normal;
   font-weight: 700;
@@ -185,7 +186,7 @@ section:not(.section-5) {
 }
 
 h2 span {
-  font-family: serif;
+  font-family: IvyMode, serif;
   font-style: italic;
   font-weight: 400;
 }
