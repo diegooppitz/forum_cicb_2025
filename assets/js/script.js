@@ -79,8 +79,8 @@ function updateBoxPosition(box, path) {
   const pathLength = path.getTotalLength();
   const point = path.getPointAtLength(percentage * pathLength);
 
-  // Set the box position and rotation
-  box.setAttribute('transform', `translate(${point.x - 15},${point.y - 15})`);
+  // Set the box position
+  box.setAttribute('transform', `translate(${point.x - 11},${point.y - 11})`);
   AOS.refresh()
 }
 
