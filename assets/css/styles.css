@@ -47,14 +47,26 @@ section .container {
 
 .linha-1 {
   left: 18vw;
+  top: 20px;
+}
+.linha-1 path {
+  opacity: 0.6;
 }
 
 .linha-2 {
   right: 250px;
+  top: 20px;
+}
+.linha-2 path {
+  opacity: 0.6;
 }
 
 .linha-3 {
   right: 170px;
+  top: 20px;
+}
+.linha-3 path {
+  opacity: 0.6;
 }
 
 @media (min-width: 1830px) {
@@ -468,6 +480,7 @@ h2 span {
   align-items: center;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-align: left;
   position: absolute;
   display: block;
   bottom: 3.438rem;
@@ -560,6 +573,8 @@ h2 span {
   transition: opacity 0.3s ease-out;
   top: 56.9rem;
   max-width: 18.75rem;
+  text-align: left;
+  line-height: 25px;
 }
 
 @media (min-width: 1020px) {
@@ -677,6 +692,7 @@ h2 span {
   font-size: 0.938rem;
   line-height: 1.375rem;
   margin: 1.438rem 0 0.625rem;
+  font-weight: 400;
 }
 
 .s-4-details-by strong {
@@ -833,6 +849,7 @@ footer .border {
   }
   .section-2 h2 {
     margin-bottom: 30px;
+    font-size: 42px;
   }
   .section-2 p.vamos {
     margin-top: 30px;
