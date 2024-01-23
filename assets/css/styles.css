@@ -26,8 +26,8 @@ section .container {
 #scrollingBox2,
 #scrollingBox3 {
   position: absolute;
-  width: 23px;
-  height: 23px;
+  width: 18px;
+  height: 18px;
   fill: #453966;
   transform-origin: center center;
   transition: fill 0.3s;
@@ -50,7 +50,7 @@ section .container {
   top: 20px;
 }
 .linha-1 path {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .linha-2 {
@@ -58,7 +58,7 @@ section .container {
   top: 20px;
 }
 .linha-2 path {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .linha-3 {
@@ -66,7 +66,7 @@ section .container {
   top: 20px;
 }
 .linha-3 path {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 @media (min-width: 1830px) {
@@ -84,7 +84,7 @@ section .container {
   }
   @-moz-document url-prefix() {
     .linha-1 {
-      left: 24%;
+      left: 20%;
       top: 0px;
     }
     .linha-2 {
@@ -167,9 +167,12 @@ header {
 header h3 {
   color: #E8E8E8;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: 2.4px;
+}
+header h3 .roxo {
+  color: #B398FF;
 }
 header .header-date {
   background-color: #b398ff;
@@ -207,8 +210,9 @@ h2 span {
   background-color: #453966;
   color: #F2F2F2;
   text-transform: uppercase;
+  text-decoration: none;
   border: none;
-  padding: 12px 40px;
+  padding: 15px 40px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -235,14 +239,14 @@ h2 span {
 }
 
 .section-1 {
-  padding: 60px 25px;
+  padding: 100px 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .section-1 .container {
   border: 2px solid #453966;
-  height: 640px;
+  height: 540px;
   width: 80%;
   max-width: 1400px;
   display: flex;
@@ -253,7 +257,7 @@ h2 span {
   width: 246px;
   margin: 60px auto;
   color: #2D2D2D;
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 325;
   line-height: 25px;
@@ -307,6 +311,7 @@ h2 span {
 .section-3 {
   background-color: #453966;
   color: white;
+  padding: 120px 25px;
 }
 .section-3 h2 {
   color: #B398FF;
@@ -327,6 +332,11 @@ h2 span {
   line-height: 30px;
   margin-top: 40px;
 }
+.section-3 p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+}
 .section-3 .caixa-data {
   width: 157.829px;
   height: 29.338px;
@@ -337,29 +347,31 @@ h2 span {
   border: 1px solid #B398FF;
   color: #B398FF;
   text-align: center;
+}
+.section-3 .caixa-data p {
   font-weight: 600;
   font-size: 12px;
   font-style: normal;
   line-height: normal;
   letter-spacing: 2.4px;
 }
-.section-3 p {
-  line-height: 26px;
-}
 .section-3 strong {
   color: #B398FF;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 22px;
 }
 .section-3 .bt-primary {
   background-color: #b398ff;
-  margin-top: 60px;
+  margin: 40px auto 0 auto;
   color: #453966;
   position: relative;
   height: 41px;
   width: 281px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section-3 .bt-primary::before {
   position: absolute;
@@ -379,6 +391,10 @@ h2 span {
   width: 960px;
   margin: auto;
   max-width: 100%;
+}
+
+.section-4 {
+  padding: 35px 25px;
 }
 
 .max-area {
@@ -432,7 +448,7 @@ h2 span {
   position: absolute;
   display: block;
   top: 0.438rem;
-  left: 4.5rem;
+  left: 3.5rem;
   width: 9.313rem;
   height: auto;
   color: #453966;
@@ -465,7 +481,11 @@ h2 span {
   color: #b398ff;
   background: #453966;
   top: 9.938rem;
-  left: 4.313rem;
+  left: 3.5rem;
+}
+
+.ingles-date {
+  top: 7rem;
 }
 
 @media (min-width: 1020px) {
@@ -511,6 +531,10 @@ h2 span {
     top: 3.125rem;
     right: 20.313rem;
     left: initial;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 .s-4-list-item {
@@ -693,6 +717,7 @@ h2 span {
   line-height: 1.375rem;
   margin: 1.438rem 0 0.625rem;
   font-weight: 400;
+  color: #453966;
 }
 
 .s-4-details-by strong {
@@ -700,9 +725,14 @@ h2 span {
 }
 
 .s-4-details-desc {
+  color: #453966;
   position: relative;
+  background-color: rgba(179, 152, 255, 0.8);
 }
 
+.section-5 {
+  padding: 60px 25px;
+}
 .section-5 p.very-big {
   color: #453966;
   text-align: center;
@@ -710,7 +740,8 @@ h2 span {
   font-size: 65px;
   font-style: normal;
   font-weight: 400;
-  line-height: 98.645px;
+  line-height: 2rem;
+  margin-bottom: 50px;
   /* 151.761% */
 }
 .section-5 .duvidas-title {
@@ -761,6 +792,8 @@ footer h4 b {
 }
 footer .footer_logo {
   margin: 12px;
+  position: relative;
+  z-index: 10;
 }
 footer .footer_flex {
   display: flex;
@@ -825,10 +858,7 @@ footer .border {
     font-size: 14px;
   }
   .section-1 {
-    padding: 40px 15px;
-  }
-  .section-1 .container {
-    height: 400px;
+    padding: 60px 15px;
   }
   .linha-1 {
     left: -200px;
@@ -842,7 +872,7 @@ footer .border {
     right: -100px;
   }
   section {
-    padding: 30px 15px;
+    padding: 80px 15px;
   }
   section:not(.section-5) {
     min-height: unset;
@@ -889,13 +919,20 @@ footer .border {
   header h3 {
     margin: 0 10px;
     font-size: 9px;
+    line-height: 16px;
   }
   header .header-date {
     font-size: 9px;
   }
+  .section-1 .logo_forum {
+    width: 224px;
+  }
   .section-1 .container {
     width: 100%;
-    padding: 15px;
+    padding: 60px 15px;
+  }
+  .section-1 p {
+    max-width: 180px;
   }
   .bt-primary {
     font-size: 12px;
