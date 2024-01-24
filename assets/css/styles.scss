@@ -550,7 +550,7 @@ h2 span {
     text-align: left;
     position: absolute;
     display: block;
-    bottom: 3.438rem;
+    bottom: 1.438rem;
     left: 1.875rem;
     max-width: 17.5rem;
     color: white;
@@ -620,8 +620,10 @@ h2 span {
     // background-color: #d9d9d9;
     transition: opacity .3s ease-in-out;
     width: 18.75rem;
-    height: 19.375rem;
-    top: 37.563rem;
+    // height: 19.375rem;
+    height: 22.4rem;
+    // top: 37.563rem;
+    top: 35.6rem;
     opacity: 0;
 
     &.desktop {
