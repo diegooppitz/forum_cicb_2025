@@ -724,6 +724,7 @@ h2 span {
   margin: 1.438rem 0 0.625rem;
   font-weight: 400;
   color: #453966;
+  background-color: rgba(179, 152, 255, 0.8);
 }
 
 .s-4-details-by strong {
@@ -774,6 +775,12 @@ h2 span {
   font-weight: 400;
   margin-bottom: 10px;
   text-transform: lowercase;
+}
+.section-5 p.bg {
+  background-color: rgba(242, 242, 242, 0.3);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
