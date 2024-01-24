@@ -580,19 +580,20 @@ h2 span {
   opacity: 1;
 }
 
-.max-area-ingles .s-4-track {
-  top: 33rem;
-}
-.max-area-ingles .s-4-details {
-  top: 53.9rem;
-}
-
 @media (min-width: 1020px) {
   .s-4-track {
     width: 15.313rem;
     height: 24.688rem;
     top: 3.563rem;
     right: 4.063rem;
+  }
+}
+@media (max-width: 1024px) {
+  .max-area-ingles .s-4-track {
+    top: 33rem;
+  }
+  .max-area-ingles .s-4-details {
+    top: 53.9rem;
   }
 }
 .s-4-track.b-loaded {
