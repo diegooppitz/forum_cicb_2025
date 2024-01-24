@@ -505,6 +505,10 @@ h2 span {
     /* 118.421% */
 }
 
+.max-area-ingles .s-4-title {
+    top: 3.4rem;
+}
+
 @media (min-width:1020px) {
     .s-4-title {
         top: 3.813rem;
@@ -538,6 +542,10 @@ h2 span {
     .s-4-date {
         top: 14.188rem;
         left: 10.438rem
+    }
+
+    .max-area-ingles .s-4-date {
+        top: 10.2rem;
     }
 }
 
