@@ -617,11 +617,20 @@ h2 span {
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
-    background-color: #d9d9d9;
+    // background-color: #d9d9d9;
     transition: opacity .3s ease-in-out;
     width: 18.75rem;
     height: 19.375rem;
-    top: 37.563rem
+    top: 37.563rem;
+    opacity: 0;
+
+    &.desktop {
+        display: none;
+    }
+
+    &.active {
+        opacity: 1;
+    }
 }
 
 @media (min-width:1020px) {
@@ -656,6 +665,7 @@ h2 span {
     .s-4-details {
         top: 28.25rem;
         max-width: 31.938rem;
+        width: 100%;
         right: 4.063rem
     }
 }
@@ -769,7 +779,6 @@ h2 span {
 
 .s-4-details-by {
     position: relative;
-    text-transform: uppercase;
     font-size: .938rem;
     line-height: 1.375rem;
     margin: 1.438rem 0 .625rem;
@@ -861,6 +870,14 @@ footer {
         // background-color: #453966;
     }
 
+    .logo_gov {
+        margin-bottom: 7px;
+    }
+
+    .logo_min_mobile {
+        display: none;
+    }
+
     .footer_flex {
         display: flex;
         flex-direction: column;
@@ -908,6 +925,7 @@ footer {
 .logo_mobile {
     display: none;
 }
+
 
 @media (max-width:1440px) {
     .linha-1 {
@@ -1087,6 +1105,14 @@ footer {
             border-right: none;
             padding: 10px 0;
             margin: 10px 0;
+        }
+
+        .logo_min_mobile {
+            display: unset;
+        }
+
+        .logo_min_desktop {
+            display: none;
         }
     }
 }

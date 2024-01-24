@@ -567,11 +567,17 @@ h2 span {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-  background-color: #d9d9d9;
   transition: opacity 0.3s ease-in-out;
   width: 18.75rem;
   height: 19.375rem;
   top: 37.563rem;
+  opacity: 0;
+}
+.s-4-track.desktop {
+  display: none;
+}
+.s-4-track.active {
+  opacity: 1;
 }
 
 @media (min-width: 1020px) {
@@ -605,6 +611,7 @@ h2 span {
   .s-4-details {
     top: 28.25rem;
     max-width: 31.938rem;
+    width: 100%;
     right: 4.063rem;
   }
 }
@@ -712,7 +719,6 @@ h2 span {
 
 .s-4-details-by {
   position: relative;
-  text-transform: uppercase;
   font-size: 0.938rem;
   line-height: 1.375rem;
   margin: 1.438rem 0 0.625rem;
@@ -794,6 +800,12 @@ footer .footer_logo {
   margin: 12px;
   position: relative;
   z-index: 10;
+}
+footer .logo_gov {
+  margin-bottom: 7px;
+}
+footer .logo_min_mobile {
+  display: none;
 }
 footer .footer_flex {
   display: flex;
@@ -973,6 +985,12 @@ footer .border {
     border-right: none;
     padding: 10px 0;
     margin: 10px 0;
+  }
+  footer .logo_min_mobile {
+    display: unset;
+  }
+  footer .logo_min_desktop {
+    display: none;
   }
 }
 
