@@ -818,6 +818,11 @@ footer h4 {
 footer h4 b {
   font-weight: 800;
 }
+footer a {
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+}
 footer .footer_logo {
   margin: 12px;
   position: relative;

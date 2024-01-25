@@ -42,7 +42,7 @@ function updateBoxPosition(box, path) {
   // Calculate the percentage based on the current scroll position
   const percentage = scrollPosition / (documentHeight - windowHeight);
   //  const percentage = scrollPosition / documentHeight;
-  console.log(percentage)
+  // console.log(percentage)
   
   // mobile positioning:
   if (window.innerWidth < 1000) {
@@ -135,3 +135,7 @@ interval = setInterval(function () {
     $('.toggle-details[data-show=info-details-' + (next === 8 ? 2 : next) + ']').click();
   }
 }, 3000);
+
+// credits
+
+console.log('%c\n \n🕹️ Built by Luiz Brancher   \n========================================= \n🖥️ https://linkedin.com/in/luiz-brancher  \n========================================= \n✉️ luiz.pb@cryptolab.net \n  \n ', 'font-size: 15px;;')
