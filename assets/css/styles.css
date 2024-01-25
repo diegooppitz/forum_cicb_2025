@@ -174,6 +174,10 @@ header h3 {
 header h3 .roxo {
   color: #B398FF;
 }
+header h3 a {
+  color: inherit;
+  text-decoration: none;
+}
 header .header-date {
   background-color: #b398ff;
   color: #453966;
