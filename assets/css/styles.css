@@ -943,6 +943,15 @@ footer .border {
   .language-switcher {
     flex-direction: column;
   }
+  .languages {
+    text-align: center;
+  }
+  .languages span {
+    display: none;
+  }
+  .languages .close-lang, .languages a {
+    display: block;
+  }
 }
 @media (max-width: 600px) {
   .svg_wrapper {
@@ -1017,6 +1026,54 @@ footer .border {
     display: unset;
   }
   footer .logo_min_desktop {
+    display: none;
+  }
+}
+.svg_mobile {
+  display: block;
+  margin: auto;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.svg_mobile svg {
+  position: absolute;
+  top: 80px;
+  width: 100vw;
+}
+.svg_mobile svg path {
+  opacity: 0.2;
+}
+.svg_mobile .linha-1-mobile {
+  right: 0px;
+}
+.svg_mobile .linha-2-mobile {
+  right: unset;
+  left: 0;
+}
+.svg_mobile .linha-3-mobile {
+  right: 0;
+}
+.svg_mobile .square {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: #453966;
+}
+.svg_mobile .sqr1 {
+  top: 328px;
+  right: 18.5%;
+  z-index: 10;
+  transform: rotate(-118.135deg);
+}
+
+@media (min-width: 600px) {
+  .svg_mobile {
     display: none;
   }
 }
