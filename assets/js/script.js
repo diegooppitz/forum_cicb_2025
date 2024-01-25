@@ -46,34 +46,34 @@ function updateBoxPosition(box, path) {
   
   // mobile positioning:
   if (window.innerWidth < 1000) {
-    if (percentage < 0.1476) {scrollingBox1.style.fill = darker;}
-    if (percentage > 0.1476) {scrollingBox1.style.fill = lighter;}
-    if (percentage < 0.1608) {scrollingBox3.style.fill = darker;}
-    if (percentage > 0.1608) {scrollingBox3.style.fill = lighter;}
-    if (percentage < 0.1952) {scrollingBox2.style.fill = darker;}
-    if (percentage > 0.1952) {scrollingBox2.style.fill = lighter;}
-    if (percentage > 0.4888) {scrollingBox3.style.fill = darker;}
-    if (percentage > 0.5235) {scrollingBox1.style.fill = darker;}
-    if (percentage > 0.5343) {scrollingBox2.style.fill = darker;}
-    if (percentage > 0.8193) {scrollingBox1.style.fill = lighter;}
-    if (percentage > 0.8347) {scrollingBox2.style.fill = lighter;}
-    if (percentage > 0.8621) {scrollingBox3.style.fill = lighter;}
+    if (percentage < 0.1476) {scrollingBox1.style.fill = darker;};
+    if (percentage > 0.1476) {scrollingBox1.style.fill = lighter;};
+    if (percentage < 0.1608) {scrollingBox3.style.fill = darker;};
+    if (percentage > 0.1608) {scrollingBox3.style.fill = lighter;};
+    if (percentage < 0.1952) {scrollingBox2.style.fill = darker;};
+    if (percentage > 0.1952) {scrollingBox2.style.fill = lighter;};
+    if (percentage > 0.4888) {scrollingBox3.style.fill = darker;};
+    if (percentage > 0.5235) {scrollingBox1.style.fill = darker;};
+    if (percentage > 0.5343) {scrollingBox2.style.fill = darker;};
+    if (percentage > 0.8193) {scrollingBox1.style.fill = lighter;};
+    if (percentage > 0.8347) {scrollingBox2.style.fill = lighter;};
+    if (percentage > 0.8621) {scrollingBox3.style.fill = lighter;};
     
   }
   //desktop positioning:
   if (window.innerWidth > 1000) {
-    if (percentage < 0.1829) { scrollingBox3.style.fill = darker; }
-    if (percentage > 0.1829) { scrollingBox3.style.fill = lighter; }
-    if (percentage < 0.2022) { scrollingBox1.style.fill = darker; }
-    if (percentage > 0.2022) { scrollingBox1.style.fill = lighter; }
-    if (percentage < 0.2438) { scrollingBox2.style.fill = darker; }
-    if (percentage > 0.2438) { scrollingBox2.style.fill = lighter; }
-    if (percentage > 0.5272) { scrollingBox3.style.fill = darker; }
-    if (percentage > 0.5738) { scrollingBox2.style.fill = darker; }
-    if (percentage > 0.5857) { scrollingBox1.style.fill = darker; }
-    if (percentage > 0.7003) { scrollingBox3.style.fill = lighter; }
-    if (percentage > 0.7424) { scrollingBox2.style.fill = lighter; }
-    if (percentage > 0.7523) { scrollingBox1.style.fill = lighter; }
+    if (percentage < 0.1829) { scrollingBox3.style.fill = darker; };
+    if (percentage > 0.1829) { scrollingBox3.style.fill = lighter; };
+    if (percentage < 0.2022) { scrollingBox1.style.fill = darker; };
+    if (percentage > 0.2022) { scrollingBox1.style.fill = lighter; };
+    if (percentage < 0.2438) { scrollingBox2.style.fill = darker; };
+    if (percentage > 0.2438) { scrollingBox2.style.fill = lighter; };
+    if (percentage > 0.5272) { scrollingBox3.style.fill = darker; };
+    if (percentage > 0.5738) { scrollingBox2.style.fill = darker; };
+    if (percentage > 0.5857) { scrollingBox1.style.fill = darker; };
+    if (percentage > 0.7003) { scrollingBox3.style.fill = lighter; };
+    if (percentage > 0.7424) { scrollingBox2.style.fill = lighter; };
+    if (percentage > 0.7523) { scrollingBox1.style.fill = lighter; };
   }
 
   // Calculate the position along the path based on the percentage
@@ -82,7 +82,7 @@ function updateBoxPosition(box, path) {
 
   // Set the box position
   box.setAttribute('transform', `translate(${point.x - 9},${point.y - 9})`);
-  AOS.refresh()
+  AOS.refresh();
 }
 
 
