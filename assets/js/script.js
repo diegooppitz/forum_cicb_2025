@@ -43,22 +43,22 @@ function updateBoxPosition(box, path) {
   const percentage = scrollPosition / (documentHeight - windowHeight);
   //  const percentage = scrollPosition / documentHeight;
   // console.log(percentage)
-  
+
   // mobile positioning:
   if (window.innerWidth < 1000) {
-    if (percentage < 0.1476) {scrollingBox1.style.fill = darker;};
-    if (percentage > 0.1476) {scrollingBox1.style.fill = lighter;};
-    if (percentage < 0.1608) {scrollingBox3.style.fill = darker;};
-    if (percentage > 0.1608) {scrollingBox3.style.fill = lighter;};
-    if (percentage < 0.1952) {scrollingBox2.style.fill = darker;};
-    if (percentage > 0.1952) {scrollingBox2.style.fill = lighter;};
-    if (percentage > 0.4888) {scrollingBox3.style.fill = darker;};
-    if (percentage > 0.5235) {scrollingBox1.style.fill = darker;};
-    if (percentage > 0.5343) {scrollingBox2.style.fill = darker;};
-    if (percentage > 0.8193) {scrollingBox1.style.fill = lighter;};
-    if (percentage > 0.8347) {scrollingBox2.style.fill = lighter;};
-    if (percentage > 0.8621) {scrollingBox3.style.fill = lighter;};
-    
+    if (percentage < 0.1476) { scrollingBox1.style.fill = darker; };
+    if (percentage > 0.1476) { scrollingBox1.style.fill = lighter; };
+    if (percentage < 0.1608) { scrollingBox3.style.fill = darker; };
+    if (percentage > 0.1608) { scrollingBox3.style.fill = lighter; };
+    if (percentage < 0.1952) { scrollingBox2.style.fill = darker; };
+    if (percentage > 0.1952) { scrollingBox2.style.fill = lighter; };
+    if (percentage > 0.4888) { scrollingBox3.style.fill = darker; };
+    if (percentage > 0.5235) { scrollingBox1.style.fill = darker; };
+    if (percentage > 0.5343) { scrollingBox2.style.fill = darker; };
+    if (percentage > 0.8193) { scrollingBox1.style.fill = lighter; };
+    if (percentage > 0.8347) { scrollingBox2.style.fill = lighter; };
+    if (percentage > 0.8621) { scrollingBox3.style.fill = lighter; };
+
   }
   //desktop positioning:
   if (window.innerWidth > 1000) {
@@ -116,9 +116,11 @@ $('.s-4-details-title-next').on('click', function () {
   var next = Number($('.s-4-track.active').data('id')) + 1;
   $('.toggle-details[data-show=info-details-' + (next === 7 ? 1 : next) + ']').click();
 });
-$('.toggle-details, .s-4-details-title-next, .s-4-details-title-prev').on('mouseenter', function () {
-  clearInterval(interval);
+$('.toggle-details, .s-4-details, .s-4-list, .s-4-track').on('mouseenter', function () {
   autoexecute = false;
+});
+$('.toggle-details, .s-4-details, .s-4-list, .s-4-track').on('mouseleave', function () {
+  autoexecute = true;
 });
 $('a[href^="#"]').click(function () {
   var href = $.attr(this, 'href');
@@ -132,9 +134,11 @@ $('a[href^="#"]').click(function () {
 interval = setInterval(function () {
   if (autoexecute === true) {
     var next = Number($('.s-4-track.active').data('id')) + 1;
-    $('.toggle-details[data-show=info-details-' + (next === 8 ? 2 : next) + ']').click();
+    $('.toggle-details[data-show=info-details-' + (next === 7 ? 1 : next) + ']').click();
+    console.log($('.toggle-details[data-show=info-details-' + (next === 7 ? 1 : next) + ']'))
   }
 }, 3000);
+
 
 // credits
 
