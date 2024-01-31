@@ -135,9 +135,9 @@ interval = setInterval(function () {
   if (autoexecute === true) {
     var next = Number($('.s-4-track.active').data('id')) + 1;
     $('.toggle-details[data-show=info-details-' + (next === 7 ? 1 : next) + ']').click();
-    console.log($('.toggle-details[data-show=info-details-' + (next === 7 ? 1 : next) + ']'))
+    // console.log($('.toggle-details[data-show=info-details-' + (next === 7 ? 1 : next) + ']'))
   }
-}, 3000);
+}, 4000);
 
 
 // credits
