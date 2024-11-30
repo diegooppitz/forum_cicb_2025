@@ -2,9 +2,8 @@ window.onload = function () {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const switcher = Boolean(urlParams.get("switcher-off"));
-  console.log("switcher", switcher)
+
   if (switcher) {
-    console.log("here")
     $(".language-switcher").hide();
     setTimeout(() => {
       $('body').removeClass('block-scroll')
