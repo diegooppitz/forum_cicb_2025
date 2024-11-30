@@ -10,7 +10,8 @@ window.onload = function () {
     }, 500);
     AOS.init();
   }
-  let docHeight = $(document).height();
+
+  let docHeight = 4000;
   $(".svg_wrapper").height(docHeight);
   const path1 = document.getElementById("motionPath1");
   const path2 = document.getElementById("motionPath2");
