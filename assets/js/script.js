@@ -1,11 +1,14 @@
 window.onload = function () {
-  var queryString = window.location.search;
-  var urlParams = new URLSearchParams(queryString);
-  var switcher = Boolean(urlParams.get("switcher-off"));
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const switcher = Boolean(urlParams.get("switcher-off"));
+  console.log("switcher", switcher)
   if (switcher) {
     console.log("here")
     $(".language-switcher").hide();
-    $("body").removeClass("block-scroll");
+    setTimeout(() => {
+      $('body').removeClass('block-scroll')
+    }, 500);
     AOS.init();
   }
   let docHeight = $(document).height();
