@@ -3,6 +3,7 @@ window.onload = function () {
   var urlParams = new URLSearchParams(queryString);
   var switcher = Boolean(urlParams.get("switcher-off"));
   if (switcher) {
+    console.log("here")
     $(".language-switcher").hide();
     $("body").removeClass("block-scroll");
     AOS.init();
