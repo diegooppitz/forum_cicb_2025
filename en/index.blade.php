@@ -10,7 +10,7 @@
     <meta property="og:image" content="https://cicb.org.br/hotsites/forum-cicb-2024/assets/meta/banner.png" />
     <link type="image/x-icon" rel="icon" href="https://cicb.org.br/hotsites/forum-cicb-2024/assets/meta/favicon.ico">
     <link type="text/css" rel="stylesheet" href="https://cicb.org.br/hotsites/forum-cicb-2024/assets/css/aos.css">
-    <link type="text/css" rel="stylesheet" href="../assets/css/styles.css">
+    <link type="text/css" rel="stylesheet" href="https://cicb.org.br/hotsites/forum-cicb-2024/assets/css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/yeh1htv.css">
 </head>
 
@@ -60,7 +60,7 @@
     <div class="language-switcher">
         <p>escolha o idioma</p>
         <div class="languages">
-            <a href="../index.html">PT</a>
+            <a href="https://cicb.org.br/forum2025/pt?switcher-off=true">PT</a>
             <span>/</span>
             <button class="close-lang">EN</button>
         </div>
@@ -181,59 +181,59 @@
         <h4><b>gold</b> sponsors</h4>
         <div class="footer_flex-2">
             <a target="_blank" href="https://www.idhsustainabletrade.com/"><img data-aos="zoom-in" class="footer_logo"
-                    src="../assets/img/logo_6.svg" alt=""></a>
+                    src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_6.svg" alt=""></a>
             <div class="footer_flex">
                 <a target="_blank" href="https://www.abrameq.com.br/"><img data-aos="zoom-in" class="footer_logo"
-                        src="../assets/img/logo_7.svg" alt=""></a>
+                        src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_7.svg" alt=""></a>
                 <div class="footer_flex mobile_flex">
                     <a target="_blank" href="https://www.bymaster.com.br/"><img data-aos="zoom-in" class="footer_logo"
-                            src="../assets/img/logo_8.svg" alt=""></a>
+                            src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_8.svg" alt=""></a>
                     <a target="_blank" href="https://www.nbn.com.br/"><img data-aos="zoom-in" class="footer_logo"
-                            src="../assets/img/logo_9.svg" alt=""></a>
+                            src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_9.svg" alt=""></a>
                     <a target="_blank" href="https://www.michelon.ind.br/"><img data-aos="zoom-in" class="footer_logo"
-                            src="../assets/img/logo_10.svg" alt=""></a>
+                            src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_10.svg" alt=""></a>
                     <a target="_blank" href="https://www.bks.ind.br/"><img data-aos="zoom-in" class="footer_logo"
-                            src="../assets/img/logo_11.svg" alt=""></a>
+                            src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_11.svg" alt=""></a>
                 </div>
             </div>
             <a target="_blank" href="https://minervafoods.com/minerva-leather/"><img data-aos="zoom-in"
-                    class="footer_logo" src="../assets/img/logo_12.svg" alt=""></a>
+                    class="footer_logo" src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_12.svg" alt=""></a>
         </div>
 
         <h4><b>silver</b> sponsors</h4>
         <div class="footer_flex-2">
             <a target="_blank" href="https://www.midoriautoleather.com.br/"><img data-aos="zoom-in" class="footer_logo"
-                    src="../assets/img/logo_13.svg" alt=""></a>
+                    src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_13.svg" alt=""></a>
             <div class="border">
                 <a target="_blank" href="https://www.viposa.com.br/institucional/pt/"><img data-aos="zoom-in"
-                        class="footer_logo" src="../assets/img/logo_14.svg" alt=""></a>
+                        class="footer_logo" src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_14.svg" alt=""></a>
                 <a target="_blank" href="https://www.vancouros.com.br/pt-br"><img data-aos="zoom-in" class="footer_logo"
-                        src="../assets/img/logo_15.svg" alt=""></a>
+                        src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_15.svg" alt=""></a>
             </div>
-            <img data-aos="zoom-in" class="footer_logo" src="../assets/img/logo_16.svg" alt="">
+            <img data-aos="zoom-in" class="footer_logo" src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_16.svg" alt="">
         </div>
 
         <h4>Organized By</h4>
         <a target="_blank" href="https://cicb.org.br/brazilian-leather/en"><img data-aos="zoom-in" class="footer_logo"
-                src="../assets/img/logo_1.svg" alt=""></a>
+                src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_1.svg" alt=""></a>
 
         <h4>Promoted By</h4>
         <a target="_blank" href="https://cicb.org.br/cicb"><img data-aos="zoom-in" class="footer_logo"
-                src="../assets/img/logo_2.svg" alt=""></a>
+                src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_2.svg" alt=""></a>
         <a target="_blank" href="https://apexbrasil.com.br/"><img data-aos="zoom-in" class="footer_logo"
-                src="../assets/img/logo_3.svg" alt=""></a>
+                src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_3.svg" alt=""></a>
         <a target="_blank" href="https://www.gov.br/mdic/pt-br"><img data-aos="zoom-in"
-                class="footer_logo logo_min_desktop" src="../assets/img/logo_4.svg" alt=""></a>
+                class="footer_logo logo_min_desktop" src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_4.svg" alt=""></a>
         <a target="_blank" href="https://www.gov.br/mdic/pt-br"><img data-aos="zoom-in"
-                class="footer_logo logo_min_mobile" src="../assets/img/logo_4_mobile.svg" alt=""></a>
+                class="footer_logo logo_min_mobile" src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_4_mobile.svg" alt=""></a>
         <a target="_blank" href="https://www.gov.br/pt-br"><img data-aos="zoom-in" class="footer_logo logo_gov"
-                src="../assets/img/logo_5.svg" alt=""></a>
+                src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/img/logo_5.svg" alt=""></a>
     </footer>
 
 
     <script src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/js/jquery-3.7.0.min.js"></script>
     <script src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/js/aos.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="https://cicb.org.br/hotsites/forum-cicb-2024/assets/js/script.js"></script>
 </body>
 
 </html>
