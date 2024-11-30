@@ -4,7 +4,7 @@ window.onload = function () {
   var switcher = Boolean(urlParams.get("switcher-off"));
   if (switcher) {
     $(".language-switcher").hide();
-    $("body").removeClass("scroll");
+    $("body").removeClass("block-scroll");
     AOS.init();
   }
   let docHeight = $(document).height();
