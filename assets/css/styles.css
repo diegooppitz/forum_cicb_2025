@@ -101,7 +101,7 @@ section .container {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 105vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -149,7 +149,7 @@ section .container {
 .block-scroll {
   overflow: hidden;
 }
-.block-scroll .section-2, .block-scroll .section-3, .block-scroll .section-4, .block-scroll .section-5, .block-scroll footer {
+.block-scroll .svg_wrapper, .block-scroll .svg_mobile, .block-scroll .section-2, .block-scroll .section-3, .block-scroll .section-4, .block-scroll .section-5, .block-scroll .section-6 {
   display: none;
 }
 
@@ -246,6 +246,7 @@ h2 span {
 
 .section-1 {
   padding: 100px 25px;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
