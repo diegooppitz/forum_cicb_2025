@@ -42,21 +42,58 @@ section .container {
 .svg_wrapper svg {
   position: absolute;
   z-index: 1;
+  width: 324px;
+  height: 642px;
 }
-
-.linha-1 {
+@media (max-width: 768px) {
+  .svg_wrapper svg {
+    width: 120px;
+    height: 371px;
+  }
+}
+.svg_wrapper .linha-1 {
   left: 0;
   top: 700px;
 }
-
-.linha-2 {
+.svg_wrapper .linha-2 {
   right: 0;
   top: 1345px;
+  width: 362px;
+  height: 718px;
 }
-
-.linha-3 {
+@media (max-width: 768px) {
+  .svg_wrapper .linha-2 {
+    width: 170px;
+    height: 550px;
+  }
+}
+.svg_wrapper .linha-3 {
   left: 0;
   top: 2845px;
+}
+@media (max-width: 768px) {
+  .svg_wrapper .linha-3 {
+    top: 2825px;
+  }
+}
+.svg_wrapper .linha-4,
+.svg_wrapper .linha-5 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .svg_wrapper .linha-4,
+  .svg_wrapper .linha-5 {
+    display: initial;
+  }
+}
+.svg_wrapper .linha-4 {
+  top: 3460px;
+  right: 0;
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+.svg_wrapper .linha-5 {
+  top: 4050px;
 }
 
 .language-switcher {
@@ -64,16 +101,16 @@ section .container {
   position: absolute;
   top: 0;
   left: 0;
-  height: 105vh;
+  height: 110vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  z-index: 1000;
+  color: #fff;
+  z-index: 9999;
 }
 .language-switcher p {
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-family: IvyMode, serif;
   font-size: 25px;
   font-style: italic;
@@ -83,12 +120,12 @@ section .container {
 
 .languages {
   margin: 40px;
-  color: #85C1C3;
+  color: #85c1c3;
 }
 .languages a,
 .languages span,
 .languages .close-lang {
-  color: #85C1C3;
+  color: #85c1c3;
   text-align: center;
   font-family: IvyEpic, sans-serif;
   font-size: 82.601px;
@@ -112,7 +149,13 @@ section .container {
 .block-scroll {
   overflow: hidden;
 }
-.block-scroll .svg_wrapper, .block-scroll .svg_mobile, .block-scroll .section-2, .block-scroll .section-3, .block-scroll .section-4, .block-scroll .section-5, .block-scroll .section-6 {
+.block-scroll .svg_wrapper,
+.block-scroll .svg_mobile,
+.block-scroll .section-2,
+.block-scroll .section-3,
+.block-scroll .section-4,
+.block-scroll .section-5,
+.block-scroll .section-6 {
   display: none;
 }
 
@@ -130,21 +173,21 @@ header {
   padding-right: 100px;
 }
 header h3 {
-  color: #E8E8E8;
+  color: #e8e8e8;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2.4px;
 }
 header h3 .roxo {
-  color: #85C1C3;
+  color: #85c1c3;
 }
 header h3 a {
   color: inherit;
   text-decoration: none;
 }
 header .header-date {
-  background-color: #85C1C3;
+  background-color: #85c1c3;
   color: #476262;
   text-align: center;
   font-size: 12px;
@@ -165,7 +208,7 @@ section:not(.section-5) {
 }
 
 .primary-section {
-  background-color: #85C1C3;
+  background-color: #85c1c3;
   text-align: center;
 }
 
@@ -177,7 +220,7 @@ h2 span {
 
 .bt-primary {
   background-color: #476262;
-  color: #F2F2F2;
+  color: #f2f2f2;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -226,7 +269,7 @@ h2 span {
 .section-1 p {
   width: 246px;
   margin: 60px auto;
-  color: #2D2D2D;
+  color: #2d2d2d;
   font-size: 15px;
   font-style: normal;
   font-weight: 325;
@@ -251,7 +294,7 @@ h2 span {
   /* 99.392% */
 }
 .section-2 h2 span {
-  color: #85C1C3;
+  color: #85c1c3;
 }
 .section-2 p {
   width: 50%;
@@ -287,7 +330,7 @@ h2 span {
   padding: 120px 25px;
 }
 .section-3 h2 {
-  color: #85C1C3;
+  color: #85c1c3;
   text-align: center;
   font-size: 55px;
   font-weight: 500;
@@ -298,7 +341,7 @@ h2 span {
   color: white;
 }
 .section-3 strong {
-  color: #85C1C3;
+  color: #85c1c3;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -312,11 +355,11 @@ h2 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1.2px solid #85C1C3;
+  border: 1.2px solid #85c1c3;
   padding: 7px;
 }
 .section-3 .btn-wrapper .bt-primary {
-  background-color: #85C1C3;
+  background-color: #85c1c3;
   color: #476262;
   height: auto;
   padding: 15px 7px;
@@ -325,6 +368,11 @@ h2 span {
 
 .section-4 {
   display: flex;
+}
+@media (max-width: 768px) {
+  .section-4 {
+    height: 100vh;
+  }
 }
 .section-4 h2 {
   color: #476262;
@@ -337,7 +385,7 @@ h2 span {
   color: white;
 }
 .section-4 strong {
-  color: #85C1C3;
+  color: #85c1c3;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -397,7 +445,7 @@ h2 span {
 }
 
 footer {
-  padding: 100px 0;
+  padding: 130px 0;
   background-color: #476262;
   height: auto;
   color: white;
@@ -405,7 +453,7 @@ footer {
   text-align: center;
 }
 footer h4 {
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-size: 11px;
   font-weight: 400;
   line-height: 35px;
@@ -526,14 +574,12 @@ footer .border {
   .languages span {
     display: none;
   }
-  .languages .close-lang, .languages a {
+  .languages .close-lang,
+  .languages a {
     display: block;
   }
 }
 @media (max-width: 600px) {
-  .svg_wrapper {
-    display: none;
-  }
   body {
     overflow-x: auto;
   }
@@ -579,8 +625,8 @@ footer .border {
     margin: 0;
   }
   footer .footer_flex:not(.mobile_flex) {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
     width: fit-content;
     margin: 10px 0;
     padding: 10px 0;
@@ -592,8 +638,8 @@ footer .border {
     margin: 0;
   }
   footer .border {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
     border-left: none;
     border-right: none;
     padding: 10px 0;
@@ -603,54 +649,6 @@ footer .border {
     display: unset;
   }
   footer .logo_min_desktop {
-    display: none;
-  }
-}
-.svg_mobile {
-  display: block;
-  margin: auto;
-  height: fit-content;
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.svg_mobile svg {
-  position: absolute;
-  top: 80px;
-  width: 100vw;
-}
-.svg_mobile svg path {
-  opacity: 0.7;
-}
-.svg_mobile .linha-1-mobile {
-  right: 0px;
-}
-.svg_mobile .linha-2-mobile {
-  right: unset;
-  left: 0;
-}
-.svg_mobile .linha-3-mobile {
-  right: 0;
-}
-.svg_mobile .square {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  background-color: #476262;
-}
-.svg_mobile .sqr1 {
-  top: 328px;
-  right: 18.5%;
-  z-index: 10;
-  transform: rotate(-118.135deg);
-}
-
-@media (min-width: 600px) {
-  .svg_mobile {
     display: none;
   }
 }

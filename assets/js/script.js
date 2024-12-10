@@ -1,5 +1,5 @@
 window.onload = function () {
-  const docHeight = 4000;
+  const docHeight = 4370;
   $(".svg_wrapper").height(docHeight);
 
   const queryString = window.location.search;
